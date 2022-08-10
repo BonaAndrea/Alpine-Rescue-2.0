@@ -21,55 +21,62 @@ public sealed class SRResources {
     
     private const string _tsInternal = "1.5.0";
     
+    public static global::TypeSafe.Resource<global::DG.Tweening.Core.DOTweenSettings> DOTweenSettings {
+        get {
+            return ((global::TypeSafe.Resource<global::DG.Tweening.Core.DOTweenSettings>)(@__ts_internal_resources[0]));
+        }
+    }
+    
     public static global::TypeSafe.PrefabResource DebugUIPersistentCanvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[0]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[1]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.Material> CieloTramonto {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[1]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[2]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.TextAsset> LineBreaking_Leading_Characters {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[2]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[3]));
         }
     }
     
     public static global::TypeSafe.PrefabResource Canvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[3]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[4]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.Material> CieloGiorno {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[4]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[5]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.TextAsset> LineBreaking_Following_Characters {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[5]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[6]));
         }
     }
     
     public static global::TypeSafe.Resource<global::TMPro.TMP_Settings> TMP_Settings {
         get {
-            return ((global::TypeSafe.Resource<global::TMPro.TMP_Settings>)(@__ts_internal_resources[6]));
+            return ((global::TypeSafe.Resource<global::TMPro.TMP_Settings>)(@__ts_internal_resources[7]));
         }
     }
     
     public static global::TypeSafe.PrefabResource DebugUICanvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[7]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[8]));
         }
     }
     
     private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
+            new global::TypeSafe.Resource<global::DG.Tweening.Core.DOTweenSettings>("DOTweenSettings", "DOTweenSettings"),
             new global::TypeSafe.PrefabResource("DebugUIPersistentCanvas", "DebugUIPersistentCanvas"),
             new global::TypeSafe.Resource<global::UnityEngine.Material>("CieloTramonto", "CieloTramonto"),
             new global::TypeSafe.Resource<global::UnityEngine.TextAsset>("LineBreaking Leading Characters", "LineBreaking Leading Characters"),
@@ -3770,6 +3777,299 @@ public sealed class SRResources {
             }
         }
         
+        public sealed class Materials {
+            
+            private Materials() {
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Terrazzo {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[0]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_G08 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[1]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_D08 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[2]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_L02 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[3]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_H08 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[4]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_E02 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[5]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_I03 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[6]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Translucent_Glass_Blue {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[7]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_C08 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[8]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_M02 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[9]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_G07 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[10]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_C06 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[11]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_B06 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[12]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_I08 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[13]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_M04 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[14]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_D02 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[15]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_M00 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[16]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> FrontColor {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[17]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_E05 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[18]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_F07 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[19]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_D05 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[20]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_D06 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[21]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_B05 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[22]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_B04 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[23]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_D07 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[24]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_F04 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[25]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_M05 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[26]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_G03 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[27]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_C07 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[28]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_B03 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[29]));
+                }
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Material> Color_G06 {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[30]));
+                }
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Terrazzo", "low poly pack/Materials/Terrazzo"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_G08", "low poly pack/Materials/Color_G08"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_D08", "low poly pack/Materials/Color_D08"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_L02", "low poly pack/Materials/Color_L02"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_H08", "low poly pack/Materials/Color_H08"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_E02", "low poly pack/Materials/Color_E02"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_I03", "low poly pack/Materials/Color_I03"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Translucent_Glass_Blue", "low poly pack/Materials/Translucent_Glass_Blue"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_C08", "low poly pack/Materials/Color_C08"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_M02", "low poly pack/Materials/Color_M02"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_G07", "low poly pack/Materials/Color_G07"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_C06", "low poly pack/Materials/Color_C06"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_B06", "low poly pack/Materials/Color_B06"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_I08", "low poly pack/Materials/Color_I08"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_M04", "low poly pack/Materials/Color_M04"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_D02", "low poly pack/Materials/Color_D02"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_M00", "low poly pack/Materials/Color_M00"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("FrontColor", "low poly pack/Materials/FrontColor"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_E05", "low poly pack/Materials/Color_E05"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_F07", "low poly pack/Materials/Color_F07"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_D05", "low poly pack/Materials/Color_D05"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_D06", "low poly pack/Materials/Color_D06"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_B05", "low poly pack/Materials/Color_B05"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_B04", "low poly pack/Materials/Color_B04"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_D07", "low poly pack/Materials/Color_D07"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_F04", "low poly pack/Materials/Color_F04"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_M05", "low poly pack/Materials/Color_M05"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_G03", "low poly pack/Materials/Color_G03"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_C07", "low poly pack/Materials/Color_C07"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_B03", "low poly pack/Materials/Color_B03"),
+                    new global::TypeSafe.Resource<global::UnityEngine.Material>("Color_G06", "low poly pack/Materials/Color_G06")};
+            
+            /// <summary>
+            /// Return a read-only list of all resources in this folder.
+            /// This method has a very low performance cost, no need to cache the result.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContents() {
+                return @__ts_internal_resources;
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_recursiveLookupCache;
+            
+            /// <summary>
+            /// Return a list of all resources in this folder and all sub-folders.
+            /// The result of this method is cached, so subsequent calls will have very low performance cost.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContentsRecursive() {
+                if ((@__ts_internal_recursiveLookupCache != null)) {
+                    return @__ts_internal_recursiveLookupCache;
+                }
+                global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
+                tmp.AddRange(GetContents());
+                @__ts_internal_recursiveLookupCache = tmp;
+                return @__ts_internal_recursiveLookupCache;
+            }
+            
+            /// <summary>
+            /// Return an iterator of all resources in this folder of type <typeparamref name="TResource"> (does not include sub-folders)
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContents<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContents());
+            }
+            
+            /// <summary>
+            /// Return a iterator of all resources in this folder of type <typeparamref name="TResource">, including sub-folders.
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContentsRecursive<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder.
+            /// </summary>
+            public static void UnloadAll() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContents());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder and subfolders.
+            /// </summary>
+            private void UnloadAllRecursive() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Clears any internal lists of assets that were cached by <see cref="GetContentsRecursive"/>.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            internal static void ClearCache() {
+                @__ts_internal_recursiveLookupCache = null;
+            }
+        }
+        
         public sealed class Terain {
             
             private Terain() {
@@ -5671,6 +5971,89 @@ public sealed class SRResources {
             }
         }
         
+        public sealed class Lowpoly_tree2 {
+            
+            private Lowpoly_tree2() {
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Texture2D> Terrazzo {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Texture2D>)(@__ts_internal_resources[0]));
+                }
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
+                    new global::TypeSafe.Resource<global::UnityEngine.Texture2D>("Terrazzo", "low poly pack/Lowpoly tree2/Terrazzo")};
+            
+            /// <summary>
+            /// Return a read-only list of all resources in this folder.
+            /// This method has a very low performance cost, no need to cache the result.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContents() {
+                return @__ts_internal_resources;
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_recursiveLookupCache;
+            
+            /// <summary>
+            /// Return a list of all resources in this folder and all sub-folders.
+            /// The result of this method is cached, so subsequent calls will have very low performance cost.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContentsRecursive() {
+                if ((@__ts_internal_recursiveLookupCache != null)) {
+                    return @__ts_internal_recursiveLookupCache;
+                }
+                global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
+                tmp.AddRange(GetContents());
+                @__ts_internal_recursiveLookupCache = tmp;
+                return @__ts_internal_recursiveLookupCache;
+            }
+            
+            /// <summary>
+            /// Return an iterator of all resources in this folder of type <typeparamref name="TResource"> (does not include sub-folders)
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContents<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContents());
+            }
+            
+            /// <summary>
+            /// Return a iterator of all resources in this folder of type <typeparamref name="TResource">, including sub-folders.
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContentsRecursive<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder.
+            /// </summary>
+            public static void UnloadAll() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContents());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder and subfolders.
+            /// </summary>
+            private void UnloadAllRecursive() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Clears any internal lists of assets that were cached by <see cref="GetContentsRecursive"/>.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            internal static void ClearCache() {
+                @__ts_internal_recursiveLookupCache = null;
+            }
+        }
+        
         /// <summary>
         /// Return a read-only list of all resources in this folder.
         /// This method has a very low performance cost, no need to cache the result.
@@ -5694,6 +6077,7 @@ public sealed class SRResources {
             global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
             tmp.AddRange(GetContents());
             tmp.AddRange(Fbx_low_poly.GetContentsRecursive());
+            tmp.AddRange(Materials.GetContentsRecursive());
             tmp.AddRange(Terain.GetContentsRecursive());
             tmp.AddRange(Tre.GetContentsRecursive());
             tmp.AddRange(Sky.GetContentsRecursive());
@@ -5703,6 +6087,7 @@ public sealed class SRResources {
             tmp.AddRange(Rock.GetContentsRecursive());
             tmp.AddRange(land.GetContentsRecursive());
             tmp.AddRange(Light_and_Reflection.GetContentsRecursive());
+            tmp.AddRange(Lowpoly_tree2.GetContentsRecursive());
             @__ts_internal_recursiveLookupCache = tmp;
             return @__ts_internal_recursiveLookupCache;
         }
@@ -5748,6 +6133,7 @@ public sealed class SRResources {
         internal static void ClearCache() {
             @__ts_internal_recursiveLookupCache = null;
             Fbx_low_poly.ClearCache();
+            Materials.ClearCache();
             Terain.ClearCache();
             Tre.ClearCache();
             Sky.ClearCache();
@@ -5757,6 +6143,7 @@ public sealed class SRResources {
             Rock.ClearCache();
             land.ClearCache();
             Light_and_Reflection.ClearCache();
+            Lowpoly_tree2.ClearCache();
         }
     }
     
