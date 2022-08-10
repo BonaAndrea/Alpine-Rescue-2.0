@@ -246,3 +246,9 @@ MonoBehaviour:
       SDF.asset
     Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  - Path: Assets/Resources/DOTweenSettings.asset
+    Type: DG.Tweening.Core.DOTweenSettings, DOTween, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/low poly pack/low poly/New Flare.flare
+    Type: UnityEngine.Flare, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

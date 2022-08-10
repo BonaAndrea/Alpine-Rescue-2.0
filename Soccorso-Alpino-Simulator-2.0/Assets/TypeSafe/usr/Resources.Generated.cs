@@ -5971,9 +5971,9 @@ public sealed class SRResources {
             }
         }
         
-        public sealed class Lowpoly_tree2 {
+        public sealed class Lowpoly_tree2_txt {
             
-            private Lowpoly_tree2() {
+            private Lowpoly_tree2_txt() {
             }
             
             public static global::TypeSafe.Resource<global::UnityEngine.Texture2D> Terrazzo {
@@ -5983,7 +5983,90 @@ public sealed class SRResources {
             }
             
             private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
-                    new global::TypeSafe.Resource<global::UnityEngine.Texture2D>("Terrazzo", "low poly pack/Lowpoly tree2/Terrazzo")};
+                    new global::TypeSafe.Resource<global::UnityEngine.Texture2D>("Terrazzo", "low poly pack/Lowpoly_tree2_txt/Terrazzo")};
+            
+            /// <summary>
+            /// Return a read-only list of all resources in this folder.
+            /// This method has a very low performance cost, no need to cache the result.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContents() {
+                return @__ts_internal_resources;
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_recursiveLookupCache;
+            
+            /// <summary>
+            /// Return a list of all resources in this folder and all sub-folders.
+            /// The result of this method is cached, so subsequent calls will have very low performance cost.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContentsRecursive() {
+                if ((@__ts_internal_recursiveLookupCache != null)) {
+                    return @__ts_internal_recursiveLookupCache;
+                }
+                global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
+                tmp.AddRange(GetContents());
+                @__ts_internal_recursiveLookupCache = tmp;
+                return @__ts_internal_recursiveLookupCache;
+            }
+            
+            /// <summary>
+            /// Return an iterator of all resources in this folder of type <typeparamref name="TResource"> (does not include sub-folders)
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContents<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContents());
+            }
+            
+            /// <summary>
+            /// Return a iterator of all resources in this folder of type <typeparamref name="TResource">, including sub-folders.
+            /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+            /// </summary>
+            /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder and sub-folders.</returns>
+            public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContentsRecursive<TResource>()
+                where TResource : global::UnityEngine.Object {
+                return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder.
+            /// </summary>
+            public static void UnloadAll() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContents());
+            }
+            
+            /// <summary>
+            /// Call Unload() on every loaded resource in this folder and subfolders.
+            /// </summary>
+            private void UnloadAllRecursive() {
+                global::TypeSafe.TypeSafeUtil.UnloadAll(GetContentsRecursive());
+            }
+            
+            /// <summary>
+            /// Clears any internal lists of assets that were cached by <see cref="GetContentsRecursive"/>.
+            /// </summary>
+            /// <returns>A list of resource objects in this folder.</returns>
+            internal static void ClearCache() {
+                @__ts_internal_recursiveLookupCache = null;
+            }
+        }
+        
+        public sealed class low_poly {
+            
+            private low_poly() {
+            }
+            
+            public static global::TypeSafe.Resource<global::UnityEngine.Flare> New_Flare {
+                get {
+                    return ((global::TypeSafe.Resource<global::UnityEngine.Flare>)(@__ts_internal_resources[0]));
+                }
+            }
+            
+            private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
+                    new global::TypeSafe.Resource<global::UnityEngine.Flare>("New Flare", "low poly pack/low poly/New Flare")};
             
             /// <summary>
             /// Return a read-only list of all resources in this folder.
@@ -6087,7 +6170,8 @@ public sealed class SRResources {
             tmp.AddRange(Rock.GetContentsRecursive());
             tmp.AddRange(land.GetContentsRecursive());
             tmp.AddRange(Light_and_Reflection.GetContentsRecursive());
-            tmp.AddRange(Lowpoly_tree2.GetContentsRecursive());
+            tmp.AddRange(Lowpoly_tree2_txt.GetContentsRecursive());
+            tmp.AddRange(low_poly.GetContentsRecursive());
             @__ts_internal_recursiveLookupCache = tmp;
             return @__ts_internal_recursiveLookupCache;
         }
@@ -6143,7 +6227,8 @@ public sealed class SRResources {
             Rock.ClearCache();
             land.ClearCache();
             Light_and_Reflection.ClearCache();
-            Lowpoly_tree2.ClearCache();
+            Lowpoly_tree2_txt.ClearCache();
+            low_poly.ClearCache();
         }
     }
     
