@@ -37,17 +37,14 @@ public class TransitionController : MonoBehaviour
             }
         }
     }
-
-
-    public void TransitionFadeIn()
-    {
-        IsTransitioning = true;
-        TransitionIn = true;
-    }
     public void TransitionFadeOut()
     {
         IsTransitioning = true;
         TransitionIn = false;
     }
-
+    public void TransitionFadeIn()
+    {
+        IsTransitioning = true;
+        TransitionIn = true;
+    }
 }
