@@ -27,56 +27,63 @@ public sealed class SRResources {
         }
     }
     
+    public static global::TypeSafe.Resource<global::UnityEngine.Material> CieloGiornoValanga {
+        get {
+            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[1]));
+        }
+    }
+    
     public static global::TypeSafe.PrefabResource DebugUIPersistentCanvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[1]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[2]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.Material> CieloTramonto {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[2]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[3]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.TextAsset> LineBreaking_Leading_Characters {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[3]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[4]));
         }
     }
     
     public static global::TypeSafe.PrefabResource Canvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[4]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[5]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.Material> CieloGiorno {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[5]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[6]));
         }
     }
     
     public static global::TypeSafe.Resource<global::UnityEngine.TextAsset> LineBreaking_Following_Characters {
         get {
-            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[6]));
+            return ((global::TypeSafe.Resource<global::UnityEngine.TextAsset>)(@__ts_internal_resources[7]));
         }
     }
     
     public static global::TypeSafe.Resource<global::TMPro.TMP_Settings> TMP_Settings {
         get {
-            return ((global::TypeSafe.Resource<global::TMPro.TMP_Settings>)(@__ts_internal_resources[7]));
+            return ((global::TypeSafe.Resource<global::TMPro.TMP_Settings>)(@__ts_internal_resources[8]));
         }
     }
     
     public static global::TypeSafe.PrefabResource DebugUICanvas {
         get {
-            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[8]));
+            return ((global::TypeSafe.PrefabResource)(@__ts_internal_resources[9]));
         }
     }
     
     private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
             new global::TypeSafe.Resource<global::DG.Tweening.Core.DOTweenSettings>("DOTweenSettings", "DOTweenSettings"),
+            new global::TypeSafe.Resource<global::UnityEngine.Material>("CieloGiornoValanga", "CieloGiornoValanga"),
             new global::TypeSafe.PrefabResource("DebugUIPersistentCanvas", "DebugUIPersistentCanvas"),
             new global::TypeSafe.Resource<global::UnityEngine.Material>("CieloTramonto", "CieloTramonto"),
             new global::TypeSafe.Resource<global::UnityEngine.TextAsset>("LineBreaking Leading Characters", "LineBreaking Leading Characters"),
