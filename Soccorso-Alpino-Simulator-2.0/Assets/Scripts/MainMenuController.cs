@@ -18,8 +18,6 @@ public class MainMenuController : SceneController
     [SerializeField]
     private Button _avalanchePlayButton, _avalancheLearnButton;
 
-    //Fare solo una funzione per caricare la scena con un parametro che dice se è game o no
-
     private IEnumerator LoadNewScene(int Scene)
     {
         while (_transitionController.IsTransitioning)
@@ -49,13 +47,22 @@ public class MainMenuController : SceneController
         _helicopterPlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 1, 1));
         _canineLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 2, 0));
         _caninePlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 2, 1));
-        _avalancheLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 3, 0));
-        _avalanchePlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 3, 1));
+        _avalancheLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Valanga, 3, 0));
+        _avalanchePlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Valanga, 3, 1));
+        GameValues.GameMode = 0;
+        GameValues.Scenery = 0;
+        GameValues.Score = 0;
 
     }
     public void PlaySceneMode(int sceneToLoad, int scenery, int mode)
     {
         _transitionController.TransitionFadeOut();
+        GameValues.Scenery = scenery;
+        GameValues.GameMode = mode;
+        if (GameValues.GameMode == 1)
+        {
+            GameValues.Score = 50;
+        }
         StartCoroutine(LoadNewScene(sceneToLoad));
     }
 

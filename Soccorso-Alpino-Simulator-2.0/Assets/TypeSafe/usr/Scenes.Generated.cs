@@ -33,9 +33,37 @@ public sealed class SRScenes {
         }
     }
     
+    public static global::TypeSafe.Scene Montagna_Elicottero {
+        get {
+            return @__all[2];
+        }
+    }
+    
+    public static global::TypeSafe.Scene CasaParenti {
+        get {
+            return @__all[3];
+        }
+    }
+    
+    public static global::TypeSafe.Scene BoscoCane {
+        get {
+            return @__all[4];
+        }
+    }
+    
+    public static global::TypeSafe.Scene Valanga {
+        get {
+            return @__all[5];
+        }
+    }
+    
     private static global::System.Collections.Generic.IList<global::TypeSafe.Scene> @__all = new global::System.Collections.ObjectModel.ReadOnlyCollection<global::TypeSafe.Scene>(new global::TypeSafe.Scene[] {
                 new global::TypeSafe.Scene("MainMenu", 0),
-                new global::TypeSafe.Scene("Baita", 1)});
+                new global::TypeSafe.Scene("Baita", 1),
+                new global::TypeSafe.Scene("Montagna_Elicottero", 2),
+                new global::TypeSafe.Scene("CasaParenti", 3),
+                new global::TypeSafe.Scene("BoscoCane", 4),
+                new global::TypeSafe.Scene("Valanga", 5)});
     
     public static global::System.Collections.Generic.IList<global::TypeSafe.Scene> All {
         get {
