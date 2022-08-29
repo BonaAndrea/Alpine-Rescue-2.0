@@ -5555,6 +5555,96 @@ public sealed class SRResources {
                     new global::TypeSafe.Resource<global::UnityEngine.Mesh>("Wolf_low_poly", "low poly pack/Wolf/Wolf_low_poly"),
                     new global::TypeSafe.PrefabResource("wolf_lod_0", "low poly pack/Wolf/wolf_lod_0")};
             
+            public sealed class Materials {
+                
+                private Materials() {
+                }
+                
+                public static global::TypeSafe.Resource<global::UnityEngine.Material> Mat1 {
+                    get {
+                        return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[0]));
+                    }
+                }
+                
+                public static global::TypeSafe.Resource<global::UnityEngine.Material> Mat {
+                    get {
+                        return ((global::TypeSafe.Resource<global::UnityEngine.Material>)(@__ts_internal_resources[1]));
+                    }
+                }
+                
+                private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_resources = new global::TypeSafe.IResource[] {
+                        new global::TypeSafe.Resource<global::UnityEngine.Material>("Mat.1", "low poly pack/Wolf/Materials/Mat.1"),
+                        new global::TypeSafe.Resource<global::UnityEngine.Material>("Mat", "low poly pack/Wolf/Materials/Mat")};
+                
+                /// <summary>
+                /// Return a read-only list of all resources in this folder.
+                /// This method has a very low performance cost, no need to cache the result.
+                /// </summary>
+                /// <returns>A list of resource objects in this folder.</returns>
+                public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContents() {
+                    return @__ts_internal_resources;
+                }
+                
+                private static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> @__ts_internal_recursiveLookupCache;
+                
+                /// <summary>
+                /// Return a list of all resources in this folder and all sub-folders.
+                /// The result of this method is cached, so subsequent calls will have very low performance cost.
+                /// </summary>
+                /// <returns>A list of resource objects in this folder and sub-folders.</returns>
+                public static global::System.Collections.Generic.IReadOnlyList<global::TypeSafe.IResource> GetContentsRecursive() {
+                    if ((@__ts_internal_recursiveLookupCache != null)) {
+                        return @__ts_internal_recursiveLookupCache;
+                    }
+                    global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
+                    tmp.AddRange(GetContents());
+                    @__ts_internal_recursiveLookupCache = tmp;
+                    return @__ts_internal_recursiveLookupCache;
+                }
+                
+                /// <summary>
+                /// Return an iterator of all resources in this folder of type <typeparamref name="TResource"> (does not include sub-folders)
+                /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+                /// </summary>
+                /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder.</returns>
+                public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContents<TResource>()
+                    where TResource : global::UnityEngine.Object {
+                    return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContents());
+                }
+                
+                /// <summary>
+                /// Return a iterator of all resources in this folder of type <typeparamref name="TResource">, including sub-folders.
+                /// This method does not cache the result, so you should cache the result yourself if you will use it often. Convert to a list first if it will be iterated over multiple time.
+                /// </summary>
+                /// <returns>A list of <typeparamref>TResource</typeparamref> objects in this folder and sub-folders.</returns>
+                public static global::System.Collections.Generic.IEnumerable<global::TypeSafe.Resource<TResource>> GetContentsRecursive<TResource>()
+                    where TResource : global::UnityEngine.Object {
+                    return global::TypeSafe.TypeSafeUtil.GetResourcesOfType<TResource>(GetContentsRecursive());
+                }
+                
+                /// <summary>
+                /// Call Unload() on every loaded resource in this folder.
+                /// </summary>
+                public static void UnloadAll() {
+                    global::TypeSafe.TypeSafeUtil.UnloadAll(GetContents());
+                }
+                
+                /// <summary>
+                /// Call Unload() on every loaded resource in this folder and subfolders.
+                /// </summary>
+                private void UnloadAllRecursive() {
+                    global::TypeSafe.TypeSafeUtil.UnloadAll(GetContentsRecursive());
+                }
+                
+                /// <summary>
+                /// Clears any internal lists of assets that were cached by <see cref="GetContentsRecursive"/>.
+                /// </summary>
+                /// <returns>A list of resource objects in this folder.</returns>
+                internal static void ClearCache() {
+                    @__ts_internal_recursiveLookupCache = null;
+                }
+            }
+            
             /// <summary>
             /// Return a read-only list of all resources in this folder.
             /// This method has a very low performance cost, no need to cache the result.
@@ -5577,6 +5667,7 @@ public sealed class SRResources {
                 }
                 global::System.Collections.Generic.List<global::TypeSafe.IResource> tmp = new global::System.Collections.Generic.List<global::TypeSafe.IResource>();
                 tmp.AddRange(GetContents());
+                tmp.AddRange(Materials.GetContentsRecursive());
                 @__ts_internal_recursiveLookupCache = tmp;
                 return @__ts_internal_recursiveLookupCache;
             }
@@ -5621,6 +5712,7 @@ public sealed class SRResources {
             /// <returns>A list of resource objects in this folder.</returns>
             internal static void ClearCache() {
                 @__ts_internal_recursiveLookupCache = null;
+                Materials.ClearCache();
             }
         }
         
