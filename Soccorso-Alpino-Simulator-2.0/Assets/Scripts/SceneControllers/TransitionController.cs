@@ -11,6 +11,11 @@ public class TransitionController : MonoBehaviour
     public float TransitionSpeed = 1f;
     public bool IsTransitioning = true;
 
+    private void Start()
+    {
+        rawImage.color = Color.black;
+    }
+
     private void Update()
     {
         if (!IsTransitioning) return;

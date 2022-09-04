@@ -132,6 +132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1735684032, guid: 7f4f4f48d70e69e47b343ff70e2d35f5, type: 3}
+      propertyPath: _interactionDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 824530809041406593, guid: 7f4f4f48d70e69e47b343ff70e2d35f5,
         type: 3}
       propertyPath: m_Name
@@ -150,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 8875081187704840438, guid: 7f4f4f48d70e69e47b343ff70e2d35f5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.178
+      value: 4.785
       objectReference: {fileID: 0}
     - target: {fileID: 8875081187704840438, guid: 7f4f4f48d70e69e47b343ff70e2d35f5,
         type: 3}
@@ -487,6 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1416661619}
   - component: {fileID: 1416661620}
+  - component: {fileID: 1416661621}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -525,6 +530,19 @@ MonoBehaviour:
     type: 2}
   _skyboxNighttimeMaterial: {fileID: 2100000, guid: b73a6570535721246824e232911cea5b,
     type: 2}
+--- !u!114 &1416661621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416661617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a95c8cc25628f4a9dc1aadac715ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tasks: []
 --- !u!1001 &1817665784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8309,18 +8327,6 @@ Transform:
   m_Father: {fileID: 817932694423303901}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5690981355973788292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5690981355973788293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9129279cccc856b409caee0a9161e4e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5690981355973788293
 GameObject:
   m_ObjectHideFlags: 0
@@ -8333,8 +8339,6 @@ GameObject:
   - component: {fileID: 3974731655127968100}
   - component: {fileID: 1321398085972421846}
   - component: {fileID: 5690981355973788294}
-  - component: {fileID: 5690981355973788295}
-  - component: {fileID: 5690981355973788292}
   m_Layer: 0
   m_Name: Porta
   m_TagString: Untagged
@@ -8355,26 +8359,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020383466, y: 0.019999998, z: 0.0014233107}
   m_Center: {x: -0.010282245, y: -0.000639033, z: -0.00003257259}
---- !u!95 &5690981355973788295
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5690981355973788293}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 49f53612b355cd84ca358c75a86ddb9c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &5727735173657808641
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8437,6 +8421,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6519717087957269653}
   - component: {fileID: 5850563539387606569}
+  - component: {fileID: 6519717087957269654}
+  - component: {fileID: 6519717087957269655}
   m_Layer: 0
   m_Name: Zaino
   m_TagString: Untagged
@@ -8697,6 +8683,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.1990001, y: -117.85901, z: 12.01}
+--- !u!114 &6519717087957269654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5850563539387606575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ee52a7643ca3e459435421b8572357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6519717087957269655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5850563539387606575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49cd67b9411fa8b44b36eacbdf3279f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Conditions: []
+  Satisfied: 0
+  OnSuccess:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFailure:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &6662495537338391717
 Transform:
   m_ObjectHideFlags: 0
