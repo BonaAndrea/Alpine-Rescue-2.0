@@ -4,6 +4,7 @@ using System.Collections;
 using System;
 using UnityEngine.EventSystems;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.InputSystem;
 
 public class PlayerInteractionManager : MonoBehaviour
 {
@@ -13,27 +14,25 @@ public class PlayerInteractionManager : MonoBehaviour
 
     [SerializeField] private RawImage _target;
 
-    public Interactive _pointingInteractive;
-    private Grabbable _pointingGrabbable;
+    [SerializeField]
+    private Interactive _pointingInteractive;
 
     [SerializeField]
     private CharacterController _fpsController;
 
     private Vector3 _rayOrigin;
-
-    private Interactive _interactiveObject = null;
-    private bool IsDialogue = false;
-    private bool locked = true;
-    private bool UIenabled = true;
+    private bool _isDialogueBoxOpen = false;
+    private bool _locked = false;
+    private bool _UIEnabled = true;
 
     void Update()
     {
         _rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
 
-        if (locked)
+        if (!_locked)
             CheckInteraction();
 
-        if (UIenabled)
+        if (_UIEnabled)
             UpdateUITarget();
 
         if (_debugRay)
@@ -42,11 +41,20 @@ public class PlayerInteractionManager : MonoBehaviour
 
     private void CheckInteraction()
     {
-
         Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
         RaycastHit hit;
 
-        if (IsDialogue == true)
+        if (Physics.Raycast(ray, out hit, _interactionDistance) && !_isDialogueBoxOpen && !EventSystem.current.IsPointerOverGameObject())
+        {
+            _pointingInteractive = hit.transform.GetComponent<Interactable>();
+
+        }
+        else
+        {
+            _pointingInteractive = null;
+        }
+
+        /*if (_isDialogueBoxOpen)
         {
             //this.gameObject.GetComponent<FirstPersonCharacterControllerSOUND>().SetLocked(true);
             if (Input.GetMouseButtonDown(0))
@@ -56,35 +64,26 @@ public class PlayerInteractionManager : MonoBehaviour
             }
 
         }
-        else
+        /*else
         {
             //this.gameObject.GetComponent<FirstPersonCharacterControllerSOUND>().SetLocked(false);
 
 
-        }
-        if (_interactiveObject != null && Input.GetMouseButtonDown(0))
-        {
+        }*/
 
-            //Drop();
+        if (_pointingInteractive != null)
+        {
+            _pointingInteractive.CheckInteractive();
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (_pointingInteractive.IsInteractive)
+                {
+                    _pointingInteractive.Interact();
+                }
+            }
             return;
         }
 
-        if (Physics.Raycast(ray, out hit, _interactionDistance) && IsDialogue == false && !EventSystem.current.IsPointerOverGameObject())
-        {
-
-            //Check if is interactable
-            _pointingInteractive = hit.transform.GetComponent<Interactable>();
-            
-            //Check if is grabbable
-            _pointingGrabbable = hit.transform.GetComponent<Grabbable>();
-
-        }
-        //If NOTHING is detected set all to null
-        else
-        {
-            _pointingInteractive = null;
-            _pointingGrabbable = null;
-        }
     }
 
     public bool GetTorchStatus()
@@ -129,28 +128,27 @@ public class PlayerInteractionManager : MonoBehaviour
     public void SetUIVisible(bool valore)
     {
         _target.enabled = valore;
-        if (!UIenabled)
+        if (!_UIEnabled)
         {
             //gameObject.GetComponent<FirstPersonCharacterController>().HidePointer();
         }
-        if (UIenabled)
+        if (_UIEnabled)
         {
             //gameObject.GetComponent<FirstPersonCharacterController>().ShowPointer();
         }
-        UIenabled = valore;
+        _UIEnabled = valore;
     }
     public bool GetUIVisible()
     {
-        return UIenabled;
+        return _UIEnabled;
     }
     public void SetLocked(bool valore)
     {
-        locked = valore;
-        //gameObject.GetComponent<FirstPersonCharacterControllerSOUND>().SetLocked(valore);
+        _locked = valore;
     }
-    public bool GetUnlocked()
+    public bool GetLocked()
     {
-        return locked;
+        return _locked;
     }
     public void SetTorchStatus(bool status)
     {

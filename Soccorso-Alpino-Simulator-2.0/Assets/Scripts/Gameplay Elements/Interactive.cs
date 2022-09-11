@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interactive : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool IsInteractive = true;
+    public List<string> TaskForActivation = new List<string>();
+
+    public UnityEvent OnInteract;
+
+    private TaskController _taskController;
+
+    private void Start()
     {
-        
+        _taskController = FindObjectOfType<TaskController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Interact()
     {
-        
+        if (!IsInteractive) return;
+
+            OnInteract.Invoke();
     }
+
+    public void CheckInteractive()
+    {
+        IsInteractive = _taskController.CheckTasks(TaskForActivation);
+    }
+
 }
