@@ -44,11 +44,18 @@ public class TaskController : MonoBehaviour
         {
             if (TaskDictionary.ContainsKey(taskName))
             {
+
+                UpdateTaskStatus(TaskDictionary[taskName]);
+
                 if (!TaskDictionary[taskName].Satisfied)
                 {
                     result = false;
                     break;
                 }
+            }
+            else
+            {
+                Debug.LogError("Task not in dictionary!");
             }
         }
 
@@ -80,6 +87,14 @@ public class TaskController : MonoBehaviour
         }
 
         TaskDictionary[task].Satisfied = !TaskDictionary[task].Satisfied;
+
+        foreach(Task value in TaskDictionary.Values)
+        {
+            if (value.Name == task)
+            {
+                UpdateTaskStatus(value);
+            }
+        }
 
     }
 

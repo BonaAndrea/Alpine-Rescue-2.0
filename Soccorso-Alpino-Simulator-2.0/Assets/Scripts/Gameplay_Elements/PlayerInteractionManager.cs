@@ -93,7 +93,7 @@ public class PlayerInteractionManager : MonoBehaviour
 
     private void UpdateUITarget()
     {
-        if (_pointingInteractive)
+        if (_pointingInteractive && _pointingInteractive.IsInteractive)
             _target.color = Color.red;
         else
             _target.color = Color.black;

@@ -20,4 +20,30 @@ public sealed class SRAnimators {
     }
     
     private const string _tsInternal = "1.5.0";
+    
+    public sealed class SoccorritoreBaita {
+        
+        private SoccorritoreBaita() {
+        }
+        
+        public sealed class Parameters {
+            
+            private Parameters() {
+            }
+            
+            public const int isIdle = 2098831385;
+            
+            public const int isWalking = -830007593;
+            
+            public const int runMultiplier = 1675232874;
+        }
+        
+        public sealed class Layers {
+            
+            private Layers() {
+            }
+            
+            public const int Base_Layer = 0;
+        }
+    }
 }
