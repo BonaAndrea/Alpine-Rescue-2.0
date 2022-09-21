@@ -486,7 +486,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143252959
 GameObject:
@@ -581,7 +581,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1143252962
 MonoBehaviour:
@@ -635,8 +635,10 @@ Transform:
   - {fileID: 6662495537338391717}
   - {fileID: 543450652336104665}
   - {fileID: 543450653703818610}
+  - {fileID: 187739012977170588}
+  - {fileID: 187739013689511177}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1248772321
 PrefabInstance:
@@ -651,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalScale.x
@@ -754,7 +756,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1416661620
 MonoBehaviour:
@@ -772,6 +774,7 @@ MonoBehaviour:
     type: 2}
   _skyboxNighttimeMaterial: {fileID: 2100000, guid: b73a6570535721246824e232911cea5b,
     type: 2}
+  _transitionController: {fileID: 1817665785}
 --- !u!114 &1416661621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +894,7 @@ PrefabInstance:
     - target: {fileID: 7626878309905773747, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7626878309905773747, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}
@@ -985,6 +988,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ce924be45e31a540a6b7f97ff2eae8c, type: 3}
+--- !u!114 &1817665785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7626878309905773746, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1817665784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ea14a73eee3fd4a98148d37b17acef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5121384232987751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +2150,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!218 &187739012773995253
 Terrain:
@@ -2622,12 +2637,12 @@ Transform:
   m_GameObject: {fileID: 187739012977170582}
   m_LocalRotation: {x: -0.6725945, y: -0.21030398, z: -0.20858239, w: 0.6781463}
   m_LocalPosition: {x: 146.813, y: 2.7979963, z: 103.29501}
-  m_LocalScale: {x: 1.9009002, y: 1.9009006, z: 1.9009008}
+  m_LocalScale: {x: 1.9009004, y: 1.9009004, z: 1.9009008}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 187739013660671544}
   - {fileID: 187739012354564029}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1229044110}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -89.52901, y: -34.458, z: -0.001}
 --- !u!95 &187739012977170589
@@ -2780,10 +2795,10 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 187739012977170582}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1416661620}
+        m_TargetAssemblyTypeName: BaitaController, Assembly-CSharp
+        m_MethodName: LoadNextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4490,7 +4505,7 @@ Transform:
   - {fileID: 5981370433227379570}
   - {fileID: 6144884843903979229}
   - {fileID: 390632661}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1229044110}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &187739013689511179
@@ -4527,7 +4542,7 @@ GameObject:
   - component: {fileID: 187739013689511190}
   - component: {fileID: 187739013689511191}
   m_Layer: 0
-  m_Name: elicotterofinal4
+  m_Name: Elicottero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4647,10 +4662,10 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 187739013689511182}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1416661620}
+        m_TargetAssemblyTypeName: BaitaController, Assembly-CSharp
+        m_MethodName: LoadNextScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

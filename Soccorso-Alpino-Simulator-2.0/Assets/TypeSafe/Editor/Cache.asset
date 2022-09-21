@@ -43,26 +43,17 @@ MonoBehaviour:
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_island01.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/FileNamesDescription.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_crackedground01.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/dirt.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/Light and Reflection/ReflectionProbe-0.exr
     Type: UnityEngine.Cubemap, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Textures/MenuBackground.renderTexture
     Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Materials/NewLayer.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain08.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
@@ -76,9 +67,6 @@ MonoBehaviour:
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain04.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial
-    Type: UnityEngine.PhysicMaterial, UnityEngine.PhysicsModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_erode02.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -109,9 +97,6 @@ MonoBehaviour:
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/HeightmapTexture.preset
     Type: UnityEditor.Presets.Preset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/moss.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -124,15 +109,6 @@ MonoBehaviour:
   - Path: Assets/Resources/Textures/BaitaVideo.mp4
     Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/ReadMe.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge01.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -154,14 +130,8 @@ MonoBehaviour:
   - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
     Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Plugins/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
     Type: TMPro.TMP_StyleSheet, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/scree.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
@@ -169,17 +139,11 @@ MonoBehaviour:
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/sand.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Resources/Textures/backgroundloop.mp4
     Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Following Characters.txt
     Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_volcano02.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
@@ -251,4 +215,40 @@ MonoBehaviour:
       PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/low poly/New Flare.flare
     Type: UnityEngine.Flare, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/FileNamesDescription.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Materials/NewLayer.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial
+    Type: UnityEngine.PhysicMaterial, UnityEngine.PhysicsModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/ReadMe.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
