@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1107 &-8827807065151669915
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11,10 +11,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -4135439824455372604}
-    m_Position: {x: 260, y: 20, z: 0}
+    m_Position: {x: 310, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4538384352759691144}
-    m_Position: {x: 380, y: 120, z: 0}
+    m_Position: {x: 460, y: 150, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -27,12 +27,12 @@ AnimatorStateMachine:
   m_DefaultState: {fileID: -4135439824455372604}
 --- !u!1102 &-4538384352759691144
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mixamo_com
+  m_Name: Fixed
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -54,12 +54,12 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1102 &-4135439824455372604
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mixamo_com
+  m_Name: Hurting
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -89,12 +89,12 @@ AnimatorController:
   m_Name: Laying Moaning 6
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: soccorso
+  - m_Name: HasBeenRescued
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -117,7 +117,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: soccorso
+    m_ConditionEvent: HasBeenRescued
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4538384352759691144}
@@ -125,10 +125,10 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15185405
   m_TransitionOffset: 0
-  m_ExitTime: 0.9409449
-  m_HasExitTime: 1
+  m_ExitTime: 4.7247783e-10
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1

@@ -17,7 +17,7 @@ public class Interactive : MonoBehaviour
         _taskController = FindObjectOfType<TaskController>();
     }
 
-    public void Interact()
+    public virtual void Interact()
     {
         if (!IsInteractive) return;
 
@@ -26,6 +26,7 @@ public class Interactive : MonoBehaviour
 
     public void CheckInteractive()
     {
+        if(TaskForActivation.Count <=0) return;
         IsInteractive = _taskController.CheckTasks(TaskForActivation);
     }
 

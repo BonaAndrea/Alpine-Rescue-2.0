@@ -46,4 +46,26 @@ public sealed class SRAnimators {
             public const int Base_Layer = 0;
         }
     }
+    
+    public sealed class Laying_Moaning_6 {
+        
+        private Laying_Moaning_6() {
+        }
+        
+        public sealed class Parameters {
+            
+            private Parameters() {
+            }
+            
+            public const int HasBeenRescued = 845737274;
+        }
+        
+        public sealed class Layers {
+            
+            private Layers() {
+            }
+            
+            public const int Base_Layer = 0;
+        }
+    }
 }
