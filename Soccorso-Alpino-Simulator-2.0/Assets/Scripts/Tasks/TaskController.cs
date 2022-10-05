@@ -98,4 +98,22 @@ public class TaskController : MonoBehaviour
 
     }
 
+    public void SetTaskSatisfied(string task, bool value)
+    {
+        if (!TaskDictionary.ContainsKey(task))
+        {
+            Debug.LogError("No such task!");
+            return;
+        }
+
+        TaskDictionary[task].Satisfied = value;
+
+        foreach (Task t in TaskDictionary.Values)
+        {
+            if (t.Name == task)
+            {
+                UpdateTaskStatus(t);
+            }
+        }
+    }
 }
