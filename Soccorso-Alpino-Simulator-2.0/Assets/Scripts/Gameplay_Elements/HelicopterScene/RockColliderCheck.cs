@@ -27,6 +27,12 @@ public class RockColliderCheck : ColliderUtilities
         if(CollisionNumber <= 0)
         {
             _controller.SetTaskSatisfied(_task, true);
+            _controller.ToggleTaskOnSuccess(_task);
+        }
+        else if(CollisionNumber > 0)
+        {
+            _controller.SetTaskSatisfied(_task, false);
+            _controller.ToggleTaskOnFailure(_task);
         }
     }
 }

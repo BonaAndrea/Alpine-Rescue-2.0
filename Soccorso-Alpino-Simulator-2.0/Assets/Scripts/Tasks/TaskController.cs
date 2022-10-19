@@ -64,6 +64,7 @@ public class TaskController : MonoBehaviour
 
     public void UpdateTaskStatus(Task toUpdate)
     {
+        if (toUpdate.Conditions.Length <= 0) return;
         foreach(string condition in toUpdate.Conditions)
         {
             if (TaskDictionary.ContainsKey(condition))
@@ -108,12 +109,28 @@ public class TaskController : MonoBehaviour
 
         TaskDictionary[task].Satisfied = value;
 
-        foreach (Task t in TaskDictionary.Values)
+        /*foreach (Task t in TaskDictionary.Values)
         {
             if (t.Name == task)
             {
                 UpdateTaskStatus(t);
             }
+        }*/
+    }
+
+    public void ToggleTaskOnFailure(string task)
+    {
+        if(TaskDictionary.ContainsKey(task)){
+            TaskDictionary[task].OnFailure.Invoke();
         }
     }
+
+    public void ToggleTaskOnSuccess(string task)
+    {
+        if (TaskDictionary.ContainsKey(task))
+        {
+            TaskDictionary[task].OnSuccess.Invoke();
+        }
+    }
+
 }

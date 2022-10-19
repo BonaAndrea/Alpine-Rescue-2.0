@@ -339,8 +339,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.16811, y: 5.5476413, z: 2.2005157}
-  m_Center: {x: -2.0032167, y: -3.7025816, z: 0.6917496}
+  m_Size: {x: 6.1681104, y: 4.5117435, z: 2.2005157}
+  m_Center: {x: -2.0032163, y: -4.2205505, z: 0.6917494}
 --- !u!114 &163062975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438755495}
   m_LocalRotation: {x: 0.00019383288, y: 0.014457015, z: 0.013403964, w: 0.9998056}
-  m_LocalPosition: {x: 143.78, y: 32.71, z: 96.97}
+  m_LocalPosition: {x: 143.78, y: 32.199, z: 96.97}
   m_LocalScale: {x: 1.4, y: 1.4999998, z: 1.5000005}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -402,7 +402,31 @@ MonoBehaviour:
   IsReachable: 0
   OnReach:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8085640211227251143}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4603535205504855305}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   MovementSpeed: 1
   RotationSpeed: 5
 --- !u!1 &451684232
@@ -468,15 +492,38 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - Name: NoRocksInCollider
-    Conditions:
-    - 
+    Conditions: []
     Satisfied: 0
     OnSuccess:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 438755497}
+          m_TargetAssemblyTypeName: HelicopterPoint, Assembly-CSharp
+          m_MethodName: SetReachable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
     OnFailure:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 438755497}
+          m_TargetAssemblyTypeName: HelicopterPoint, Assembly-CSharp
+          m_MethodName: SetReachable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &451684235
 Transform:
   m_ObjectHideFlags: 0
@@ -5466,6 +5513,9 @@ GameObject:
   - component: {fileID: 4603535205504855302}
   - component: {fileID: 598083154146763427}
   - component: {fileID: 3434036756469569129}
+  - component: {fileID: 4603535205504855305}
+  - component: {fileID: 4603535205504855304}
+  - component: {fileID: 4603535205504855303}
   m_Layer: 0
   m_Name: Barrell
   m_TagString: Untagged
@@ -6079,6 +6129,52 @@ Transform:
   m_Father: {fileID: 899920457}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4603535205504855303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794522707650901948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd042483916ca6b45b7de0b4018f55c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsInteractive: 1
+  TaskForActivation: []
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!54 &4603535205504855304
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794522707650901948}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &4603535205504855305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794522707650901948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.24285376, y: 3.484129, z: 1.8969282}
+  m_Center: {x: 0.037657727, y: -0.0004398812, z: 0.000030519855}
 --- !u!4 &4656259063369187842
 Transform:
   m_ObjectHideFlags: 0
@@ -8032,6 +8128,8 @@ GameObject:
   - component: {fileID: 6953234783389313705}
   - component: {fileID: 6327840769574987020}
   - component: {fileID: 8085640211227251142}
+  - component: {fileID: 8085640211227251144}
+  - component: {fileID: 8085640211227251143}
   m_Layer: 0
   m_Name: FirstAidKit
   m_TagString: Untagged
@@ -8334,6 +8432,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8085640211227251143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725092411918987283}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.54330856, y: 0.20000015, z: 0.7417719}
+  m_Center: {x: 0.011099237, y: 0.000030520267, z: 2.937943e-25}
+--- !u!114 &8085640211227251144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7725092411918987283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb7b019dbc583143bc830a5b5130fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsInteractive: 1
+  TaskForActivation: []
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &8104133321353647826
 Transform:
   m_ObjectHideFlags: 0
