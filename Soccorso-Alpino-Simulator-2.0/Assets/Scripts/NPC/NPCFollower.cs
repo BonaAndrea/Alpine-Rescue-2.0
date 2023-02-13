@@ -10,14 +10,14 @@ public class NPCFollower : MonoBehaviour
     private Transform _transformToFollow;
     private NavMeshAgent _agent;
     private Animator _animator;
-    private FirstPersonController _firstPersonController;
+    private FirstPersonCharacter _firstPersonController;
 
     // Start is called before the first frame update
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
-        _firstPersonController = _transformToFollow.GetComponent<FirstPersonController>();
+        _firstPersonController = _transformToFollow.GetComponent<FirstPersonCharacter>();
     }
 
     // Update is called once per frame

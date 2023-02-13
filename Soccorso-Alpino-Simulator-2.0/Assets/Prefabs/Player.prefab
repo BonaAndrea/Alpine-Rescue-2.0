@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 2166834945437820309}
   - component: {fileID: 2166834945432308853}
-  - component: {fileID: 2166834945426885717}
+  - component: {fileID: 5984713183352986944}
   - component: {fileID: 2166834945441209045}
   - component: {fileID: 2166834945438408789}
   - component: {fileID: 2166834946761391472}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +55,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2166834945426885717
+--- !u!114 &5984713183352986944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2166834945438185909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2e05d414836e74ea159bde65928b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsWalking: 0
@@ -116,8 +116,8 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.1
-    VerticalBobRange: 0.1
+    HorizontalBobRange: 0.33
+    VerticalBobRange: 0.33
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -128,8 +128,8 @@ MonoBehaviour:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
         time: 0.5
         value: 1
@@ -137,8 +137,8 @@ MonoBehaviour:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
         time: 1
         value: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
         time: 1.5
         value: -1
@@ -155,8 +155,8 @@ MonoBehaviour:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       - serializedVersion: 3
         time: 2
         value: 0
@@ -164,19 +164,21 @@ MonoBehaviour:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    VerticaltoHorizontalRatio: 2
+    VerticaltoHorizontalRatio: 1
   m_JumpBob:
-    BobDuration: 0.2
-    BobAmount: 0.1
+    BobDuration: 0
+    BobAmount: 0
   m_StepInterval: 5
   m_FootstepSounds:
-  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
-  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: ba38b1d6e233d24468b80beca1237eef, type: 3}
+  - {fileID: 8300000, guid: 6ae7cf0c1d8510f48b592742047c8d3b, type: 3}
+  - {fileID: 8300000, guid: 9685ced0d0fd9994fb4514a264da7f72, type: 3}
+  - {fileID: 8300000, guid: 0e23e3a416e9e5b41a8b59ee2d7668af, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!54 &2166834945441209045

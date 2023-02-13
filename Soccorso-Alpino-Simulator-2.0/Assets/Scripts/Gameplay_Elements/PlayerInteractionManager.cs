@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.InputSystem;
 using TMPro;
+using Unity.VisualScripting;
 
 public class PlayerInteractionManager : MonoBehaviour
 {
@@ -25,9 +26,14 @@ public class PlayerInteractionManager : MonoBehaviour
     private CharacterController _fpsController;
 
     private Vector3 _rayOrigin;
-    private bool _isDialogueBoxOpen = false;
     private bool _locked = false;
     private bool _UIEnabled = true;
+    private GameController _gameController;
+
+    private void Start()
+    {
+        _gameController = FindObjectOfType<GameController>();
+    }
 
     void Update()
     {
@@ -47,62 +53,65 @@ public class PlayerInteractionManager : MonoBehaviour
     {
         Ray ray = new Ray(_rayOrigin, _fpsCameraT.forward);
         RaycastHit hit;
-
-        if (GrabbedItem == null && Physics.Raycast(ray, out hit, _interactionDistance) && !_isDialogueBoxOpen && !EventSystem.current.IsPointerOverGameObject())
+        switch (_gameController.GameState)
         {
-            _pointingInteractive = hit.transform.GetComponent<Interactive>();
-
-        }
-        else
-        {
-            _pointingInteractive = null;
-        }
-
-        /*if (_isDialogueBoxOpen)
-        {
-            //this.gameObject.GetComponent<FirstPersonCharacterControllerSOUND>().SetLocked(true);
-            if (Input.GetMouseButtonDown(0))
-            {
-                //GameObject.FindObjectOfType<DialogueManager>().DisplayNextSentence();
-
-            }
-
-        }
-        /*else
-        {
-            //this.gameObject.GetComponent<FirstPersonCharacterControllerSOUND>().SetLocked(false);
-
-
-        }*/
-
-        if (_pointingInteractive != null)
-        {
-            _pointingInteractive.CheckInteractive();
-            if (Input.GetMouseButtonDown(0))
-            {
-                if(GrabbedItem!=null)
+            case GameState.Play:
+                if (GrabbedItem == null && Physics.Raycast(ray, out hit, _interactionDistance) &&
+                    !EventSystem.current.IsPointerOverGameObject())
                 {
-                    GrabbedItem.Release();
-                    GrabbedItem = null;
+                    _pointingInteractive = hit.transform.GetComponentInChildren<Interactive>();
+
+                }
+                else
+                {
+                    _pointingInteractive = null;
                 }
 
-                if (_pointingInteractive.IsInteractive)
+                if (_pointingInteractive != null)
                 {
-                    _pointingInteractive.Interact();
+                    _pointingInteractive.CheckInteractive();
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        if (GrabbedItem != null)
+                        {
+                            GrabbedItem.Release();
+                            GrabbedItem = null;
+                        }
+
+                        if (_pointingInteractive.IsInteractive)
+                        {
+                            _pointingInteractive.Interact();
+                        }
+                    }
+
+                    return;
                 }
-            }
-            return;
-        }
-        if(GrabbedItem != null)
-        {
-                if (Input.GetMouseButtonDown(0))
+
+                if (GrabbedItem != null)
                 {
+                    if (Input.GetMouseButtonDown(0))
+                    {
                         GrabbedItem.Release();
                         GrabbedItem = null;
-                }
-                return;
-        }
+                    }
 
+                    return;
+                }
+
+                break;
+            case GameState.Dialogue:
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    _gameController.DialogueController.DisplayNextSentence();
+
+                }
+            }
+                break;
+            default:
+                break;
+
+        }
     }
 
     public bool GetTorchStatus()

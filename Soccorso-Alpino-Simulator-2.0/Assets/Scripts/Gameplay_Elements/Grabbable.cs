@@ -13,9 +13,9 @@ public class Grabbable : Interactive
 
     void Start()
     {
-        _rigidbody = GetComponent<Rigidbody>(); 
-        _collider = GetComponent<Collider>();
-        _parent = transform.parent;
+        _rigidbody = GetComponentInParent<Rigidbody>(); 
+        _collider = GetComponentInParent<Collider>();
+        _parent = _rigidbody.transform.parent;
         _playerTransform = Camera.main.transform;
         _interactionManager = FindObjectOfType<PlayerInteractionManager>();
     }
@@ -28,7 +28,7 @@ public class Grabbable : Interactive
 
     public void Grab(Transform grabber)
     {
-        transform.parent = grabber;
+        _rigidbody.transform.parent = grabber;
         _rigidbody.isKinematic = true;
         _rigidbody.useGravity = false;
         _collider.isTrigger = true;
@@ -37,7 +37,7 @@ public class Grabbable : Interactive
 
     public void Release()
     {
-        transform.parent = _parent;
+        _rigidbody.transform.parent = _parent;
         _rigidbody.isKinematic = false;
         _rigidbody.useGravity = true;
         _collider.isTrigger = false;

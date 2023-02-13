@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -133,4 +135,38 @@ public class TaskController : MonoBehaviour
         }
     }
 
+    public bool GetTaskStatus(string task)
+    {
+        bool result = true;
+        if (!TaskDictionary.ContainsKey(task)) return false;
+
+        if (TaskDictionary[task].Conditions.Length <= 0)
+        {
+            TaskDictionary[task].Satisfied = true;
+
+            result = true;
+        }
+        else foreach (string condition in TaskDictionary[task].Conditions)
+        {
+            if (TaskDictionary.ContainsKey(condition))
+            {
+                if (!TaskDictionary[condition].Satisfied)
+                {
+                    TaskDictionary[task].Satisfied = false;
+                        
+                    result = false;
+                    break;
+                }
+            }
+        }
+
+        if (result)
+        {
+            TaskDictionary[task].Satisfied = true;
+        }
+        
+        return result;
+
+
+    }
 }
