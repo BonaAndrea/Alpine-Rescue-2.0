@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
 public class HelicopterController : SceneController
 {
@@ -12,6 +15,8 @@ public class HelicopterController : SceneController
     [SerializeField]
     private List<HelicopterPoint> _helicopterPoints = new List<HelicopterPoint>();
 
+    [SerializeField] private Transform _stretcher;
+    [SerializeField] private Transform _rescued;
     void Start()
     {
         _transitionController = FindObjectOfType<TransitionController>();
@@ -59,6 +64,13 @@ public class HelicopterController : SceneController
     public void LoadNextScene()
     {
         StartCoroutine(LoadNewScene(SRScenes.MainMenu));
+    }
+
+    public void SetOnStretcher()
+    {
+        _rescued.transform.parent = _stretcher;
+        _rescued.transform.localPosition = Vector3.zero;
+        _rescued.transform.localPosition = Vector3.right * 1.61f;
     }
 
 }
