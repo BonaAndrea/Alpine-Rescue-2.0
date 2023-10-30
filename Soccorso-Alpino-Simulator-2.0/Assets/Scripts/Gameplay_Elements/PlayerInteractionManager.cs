@@ -103,11 +103,17 @@ public class PlayerInteractionManager : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    _gameController.DialogueController.DisplayNextSentence();
-
+                    _gameController.DialogueController.DialogManager.Click_Window();
                 }
             }
                 break;
+
+            case GameState.Cutscene:
+            {
+            }
+                break;
+
+
             default:
                 break;
 

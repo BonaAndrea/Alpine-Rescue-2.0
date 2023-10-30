@@ -1,31 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 
 public enum GameState
 {
     Play,
     Pause,
-    Dialogue
+    Dialogue,
+    Cutscene,
+    Unset
 };
 public class GameController : MonoBehaviour
 {
     public GameState GameState;
     public FirstPersonCharacter FirstPersonCharacter;
     public DialogueController DialogueController;
+    private PlayableDirector[] _directors;
+    private void Awake()
+    {
+        _directors = FindObjectsOfType<PlayableDirector>();
+    }
+    
     void Start()
     {
         FirstPersonCharacter = FindObjectOfType<FirstPersonCharacter>();
         DialogueController = GetComponent<DialogueController>();
-    }
-
-    void Update()
-    {
-        if (GameState != GameState.Play)
-        {
-            
-        }
     }
 
     public void SetGameStatePause()
@@ -40,9 +42,11 @@ public class GameController : MonoBehaviour
         GameState = GameState.Play;
         Cursor.visible = false;
     }
+    
     public void SetGameStateDialogue()
     {
         GameState = GameState.Dialogue;
+        Cursor.visible = false;
     }
     
     

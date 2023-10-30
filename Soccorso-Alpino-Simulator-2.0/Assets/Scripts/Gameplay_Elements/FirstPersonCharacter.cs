@@ -14,6 +14,7 @@ public class FirstPersonCharacter : MonoBehaviour
     public float WalkSpeed;
     public float RunSpeed;
 
+
     [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
     [SerializeField] private float m_JumpSpeed;
     [SerializeField] private float m_StickToGroundForce;
@@ -101,6 +102,7 @@ public class FirstPersonCharacter : MonoBehaviour
 
     private void FixedUpdate()
     {
+        m_MouseLook.UpdateCursorLock();
         if (_gameController.GameState != GameState.Play) return;
         float speed;
         GetInput(out speed);
@@ -139,7 +141,6 @@ public class FirstPersonCharacter : MonoBehaviour
         ProgressStepCycle(speed);
         UpdateCameraPosition(speed);
 
-        m_MouseLook.UpdateCursorLock();
     }
 
 

@@ -12,11 +12,11 @@ public class MainMenuController : SceneController
     private TransitionController _transitionController;
 
     [SerializeField]
-    private Button _helicopterPlayButton, _helicopterLearnButton;
+    private Button _helicopterPlayButton;
     [SerializeField]
-    private Button _caninePlayButton, _canineLearnButton;
+    private Button _caninePlayButton;
     [SerializeField]
-    private Button _avalanchePlayButton, _avalancheLearnButton;
+    private Button _avalanchePlayButton;
 
     private IEnumerator LoadNewScene(int Scene)
     {
@@ -43,11 +43,8 @@ public class MainMenuController : SceneController
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        _helicopterLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 1, 0));
         _helicopterPlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 1, 1));
-        _canineLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 2, 0));
         _caninePlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Baita, 2, 1));
-        _avalancheLearnButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Valanga, 3, 0));
         _avalanchePlayButton.onClick.AddListener(() => PlaySceneMode(SRScenes.Valanga, 3, 1));
         GameValues.GameMode = 0;
         GameValues.Scenery = 0;

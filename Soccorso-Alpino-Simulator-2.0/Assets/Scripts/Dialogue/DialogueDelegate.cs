@@ -24,7 +24,7 @@ public class DialogueDelegate : MonoBehaviour
 
     public void SetDialogue()
     {
-        _dialogueController.SetDialogue(CurrentDialogue);
+        _dialogueController.SetDialogue(CurrentDialogue, transform.name);
     }
 
     public void NextDialogue()
