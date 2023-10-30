@@ -1512,8 +1512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa29a0a0ba12e3543a9d321d90be429e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _text: {fileID: 448526620}
-  _rect: {fileID: 858118286}
   DialogManager: {fileID: 858118285}
 --- !u!114 &451684238
 MonoBehaviour:
@@ -1990,12 +1988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07f3da1b4b00cd542a74d707c719f823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &858118286 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4094011683184477044, guid: d536fa71dd00cf349a228e41212ace48,
-    type: 3}
-  m_PrefabInstance: {fileID: 2035565256}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &887331274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4222,7 +4214,7 @@ PrefabInstance:
     - target: {fileID: 7626878309905773647, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7626878309905773744, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}

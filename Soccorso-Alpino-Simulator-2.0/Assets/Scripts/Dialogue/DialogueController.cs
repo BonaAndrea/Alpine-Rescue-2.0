@@ -25,6 +25,7 @@ public class DialogueController : MonoBehaviour
     
     public void SetDialogue(DialoguePrefab text, string charName)
     {
+        if (text == null) return;
         CurrentDialogue = new List<string>(text.Dialogues);
         _dd = new DialogData(CurrentDialogue[0], charName, () => CloseDialogueBox());
     }
@@ -38,21 +39,6 @@ public class DialogueController : MonoBehaviour
 
     private void CloseDialogueBox()
     {
-            _gameController.GameState = GameState.Play;
-        
-    }
-    
-    public void DisplayNextSentence()
-    {
-        /*if (CurrentDialogue.Count == 0) return;
-        CurrentDialogue.RemoveAt(0);
-        if (CurrentDialogue.Count >= 1)
-        {
-            _text.text = CurrentDialogue[0];
-        }
-        else
-        {
-            CloseDialogueBox();
-        }*/
+        _gameController.GameState = GameState.Play;
     }
 }

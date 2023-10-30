@@ -17,8 +17,12 @@ public class DialogueDelegate : MonoBehaviour
     
     private void Start()
     {
-        CurrentDialogue = Dialogues[0];
-        _currentDialogueIndex = 0;
+        if (Dialogues.Count > 0)
+        {
+            CurrentDialogue = Dialogues[0];
+            _currentDialogueIndex = 0;
+        }
+
         _dialogueController = FindObjectOfType<DialogueController>();
     }
 
@@ -33,5 +37,8 @@ public class DialogueDelegate : MonoBehaviour
         CurrentDialogue = Dialogues[_currentDialogueIndex];
     }
     
-    
+    public void SetDialoguePrefab(DialoguePrefab prefab)
+    {
+        Dialogues.Add(prefab);
+    }
 }

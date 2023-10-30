@@ -125,6 +125,132 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 356a3d4c11fa308428893aa92ad3a0c4, type: 2}
+--- !u!1 &370594653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370594655}
+  - component: {fileID: 370594654}
+  m_Layer: 0
+  m_Name: Someone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &370594654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370594653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a72589d53787d44910bf3856740cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentDialogue: {fileID: 0}
+  Dialogues: []
+--- !u!4 &370594655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370594653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &581588252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581588253}
+  - component: {fileID: 581588254}
+  m_Layer: 0
+  m_Name: Soc2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &581588253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581588252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 615815736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581588254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581588252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f19c4764c5415a498821d202a80664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - Make sure to grab your backpack and have two rescuers with you. Then, once you're
+    all ready, let's head to the Jeep.
+--- !u!1 &615815735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 615815736}
+  m_Layer: 0
+  m_Name: Rescuer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &615815736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615815735}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1535221712}
+  - {fileID: 581588253}
+  m_Father: {fileID: 1143178958}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686931778
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,6 +306,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1611283244630513959, guid: d536fa71dd00cf349a228e41212ace48,
+        type: 3}
+      propertyPath: m_Name
+      value: Rescuer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645192243207782509, guid: d536fa71dd00cf349a228e41212ace48,
+        type: 3}
+      propertyPath: m_Name
+      value: Someone
+      objectReference: {fileID: 0}
     - target: {fileID: 4094011683184476936, guid: d536fa71dd00cf349a228e41212ace48,
         type: 3}
       propertyPath: m_Name
@@ -285,17 +421,72 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6505911128162996474, guid: d536fa71dd00cf349a228e41212ace48,
+        type: 3}
+      propertyPath: m_text
+      value: Someone
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678720915868275294, guid: d536fa71dd00cf349a228e41212ace48,
+        type: 3}
+      propertyPath: m_text
+      value: Rescuer
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d536fa71dd00cf349a228e41212ace48, type: 3}
+--- !u!114 &882439821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4094011683184477041, guid: d536fa71dd00cf349a228e41212ace48,
+    type: 3}
+  m_PrefabInstance: {fileID: 882439820}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f3da1b4b00cd542a74d707c719f823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &889916796 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8779969533997480981, guid: c858fe8e2c2043541ac8b7e3900fe815,
     type: 3}
   m_PrefabInstance: {fileID: 8881745419216482587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1143178957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143178958}
+  m_Layer: 0
+  m_Name: Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1143178958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143178957}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1624269926}
+  - {fileID: 615815736}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143252959
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +773,7 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 57ff84e9709ba4d48ac3d9514a396de7, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
@@ -590,8 +781,6 @@ PlayableDirector:
     value: {fileID: 2166834946412494838}
   - key: {fileID: -2291092049660229096, guid: 57ff84e9709ba4d48ac3d9514a396de7, type: 2}
     value: {fileID: 1232491322906831922}
-  - key: {fileID: 8103928065229532281, guid: 57ff84e9709ba4d48ac3d9514a396de7, type: 2}
-    value: {fileID: 0}
   - key: {fileID: 6522175328607057870, guid: c81cda687d50daa4992a466e32973f3a, type: 2}
     value: {fileID: 0}
   - key: {fileID: -7041574758519193394, guid: c81cda687d50daa4992a466e32973f3a, type: 2}
@@ -652,6 +841,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: f97f602ba1affdc49b8dc30482053200, type: 2}
     - {fileID: 11400000, guid: b6fbbf5cc2719da4ca2b94dd69479074, type: 2}
+    - {fileID: 11400000, guid: ed94308bd344814408c77655237c5a4f, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -681,6 +871,44 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 370594654}
+          m_TargetAssemblyTypeName: DialogueDelegate, Assembly-CSharp
+          m_MethodName: SetDialogue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1416661623}
+          m_TargetAssemblyTypeName: DialogueController, Assembly-CSharp
+          m_MethodName: OpenDialogueBox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1416661620}
+          m_TargetAssemblyTypeName: BaitaController, Assembly-CSharp
+          m_MethodName: StartScene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1416661617
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +921,7 @@ GameObject:
   - component: {fileID: 1416661620}
   - component: {fileID: 1416661621}
   - component: {fileID: 1416661622}
+  - component: {fileID: 1416661623}
   m_Layer: 0
   m_Name: zController
   m_TagString: Untagged
@@ -750,7 +979,31 @@ MonoBehaviour:
     Satisfied: 0
     OnSuccess:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 370594654}
+          m_TargetAssemblyTypeName: DialogueDelegate, Assembly-CSharp
+          m_MethodName: SetDialoguePrefab
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1741275218}
+            m_ObjectArgumentAssemblyTypeName: DialoguePrefab, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 543450652336104671}
+          m_TargetAssemblyTypeName: DialogueDelegate, Assembly-CSharp
+          m_MethodName: SetDialoguePrefab
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1535221713}
+            m_ObjectArgumentAssemblyTypeName: DialoguePrefab, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnFailure:
       m_PersistentCalls:
         m_Calls: []
@@ -759,7 +1012,31 @@ MonoBehaviour:
     Satisfied: 0
     OnSuccess:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 543450652336104671}
+          m_TargetAssemblyTypeName: DialogueDelegate, Assembly-CSharp
+          m_MethodName: SetDialoguePrefab
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 581588254}
+            m_ObjectArgumentAssemblyTypeName: DialoguePrefab, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 370594653}
+          m_TargetAssemblyTypeName: DialogueDelegate, Assembly-CSharp
+          m_MethodName: SetDialoguePrefab
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1638181425}
+            m_ObjectArgumentAssemblyTypeName: DialoguePrefab, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     OnFailure:
       m_PersistentCalls:
         m_Calls: []
@@ -831,6 +1108,193 @@ MonoBehaviour:
   GameState: 3
   FirstPersonCharacter: {fileID: 0}
   DialogueController: {fileID: 0}
+--- !u!114 &1416661623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416661617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa29a0a0ba12e3543a9d321d90be429e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogManager: {fileID: 882439821}
+--- !u!1 &1535221711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535221712}
+  - component: {fileID: 1535221713}
+  m_Layer: 0
+  m_Name: Soc1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535221712
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535221711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 615815736}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1535221713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535221711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f19c4764c5415a498821d202a80664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - Make sure to grab your backpack and have two rescuers with you. Then, once you're
+    all ready, let's head to the helicopter.
+--- !u!1 &1624269925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624269926}
+  m_Layer: 0
+  m_Name: Someone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1624269926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624269925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1741275217}
+  - {fileID: 1638181424}
+  m_Father: {fileID: 1143178958}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1638181423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1638181424}
+  - component: {fileID: 1638181425}
+  m_Layer: 0
+  m_Name: Someone2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638181424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638181423}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1624269926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1638181425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638181423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f19c4764c5415a498821d202a80664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - Oh, thank God you picked up! Our sweet child has gone missing! He went for a
+    walk in the woods and hasn't come back! Please, help!
+--- !u!1 &1741275216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741275217}
+  - component: {fileID: 1741275218}
+  m_Layer: 0
+  m_Name: Someone1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1741275217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741275216}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1624269926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741275218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741275216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f19c4764c5415a498821d202a80664e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - Oh...hello! I was on a hike when I tripped and fell. My leg hurts and I can't
+    move!
 --- !u!1001 &1817665784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -847,7 +1311,7 @@ PrefabInstance:
     - target: {fileID: 7626878309905773647, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7626878309905773746, guid: 5ce924be45e31a540a6b7f97ff2eae8c,
         type: 3}
@@ -976,6 +1440,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ea14a73eee3fd4a98148d37b17acef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1911142854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6206968955835790772, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+    type: 3}
+  m_PrefabInstance: {fileID: 6549074643540167639}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5121384232987751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,6 +3925,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6549074643540167639}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &543450652336104671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911142854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a72589d53787d44910bf3856740cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentDialogue: {fileID: 0}
+  Dialogues: []
 --- !u!4 &543450653703818610
 Transform:
   m_ObjectHideFlags: 0
@@ -5013,7 +5497,7 @@ PrefabInstance:
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.76482016
+      value: -0.25881898
       objectReference: {fileID: 0}
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
@@ -5023,12 +5507,12 @@ PrefabInstance:
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.64424384
+      value: -0.96592593
       objectReference: {fileID: 0}
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
@@ -5038,7 +5522,7 @@ PrefabInstance:
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -210
       objectReference: {fileID: 0}
     - target: {fileID: 2166834945437820309, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
@@ -5058,7 +5542,7 @@ PrefabInstance:
     - target: {fileID: 2166834946815656985, guid: 0ef37dd4101339d428e94eb44b6907e7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8087,13 +8571,88 @@ PrefabInstance:
       objectReference: {fileID: 1248385633}
     - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
         type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
       propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1416661621}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 543450652336104671}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1416661623}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: OpenDialogueBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DialogueDelegate, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: DialogueController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206968955835790770, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6206968955835790772, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
         type: 3}
       propertyPath: m_Name
-      value: Soccorritore2_senzacasco
+      value: Rescuer
       objectReference: {fileID: 0}
     - target: {fileID: 6730706393009516302, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
         type: 3}
@@ -8153,7 +8712,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6206968955835790772, guid: 2a082b0e0866e2a4e8e26860e6fcad29,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 543450652336104671}
   m_SourcePrefab: {fileID: 100100000, guid: 2a082b0e0866e2a4e8e26860e6fcad29, type: 3}
 --- !u!4 &6629111072344668870
 Transform:
@@ -12170,3 +12733,5 @@ SceneRoots:
   - {fileID: 686931780}
   - {fileID: 1255481829}
   - {fileID: 882439820}
+  - {fileID: 1143178958}
+  - {fileID: 370594655}

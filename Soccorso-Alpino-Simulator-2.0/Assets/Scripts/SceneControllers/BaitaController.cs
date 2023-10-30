@@ -24,22 +24,16 @@ public class BaitaController : SceneController
         {
             RenderSettings.skybox = _skyboxDaylightMaterial;
             _taskController.ToggleTaskStatus("MountainRescue");
+            _taskController.ToggleTaskOnSuccess("MountainRescue");
         }
         else if(GameValues.Scenery == 2)
         {
             RenderSettings.skybox = _skyboxNighttimeMaterial;
             _taskController.ToggleTaskStatus("DogRescue");
+            _taskController.ToggleTaskOnSuccess("DogRescue");
         }
     }
-
-    void Update()
-    {
-        if(GameValues.GameMode == 1)
-        {
-            //update points ui
-        }
-    }
-
+    
     private IEnumerator LoadNewScene(int Scene)
     {
         while (_transitionController.IsTransitioning)

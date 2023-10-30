@@ -127,15 +127,15 @@ MonoBehaviour:
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge01.brush
     Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Textures/MenuBackground.renderTexture
-    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF - Fallback.asset
+    Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/low poly/New Flare.flare
     Type: UnityEngine.Flare, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF - Fallback.asset
-    Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Textures/MenuBackground.renderTexture
+    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/moss.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
