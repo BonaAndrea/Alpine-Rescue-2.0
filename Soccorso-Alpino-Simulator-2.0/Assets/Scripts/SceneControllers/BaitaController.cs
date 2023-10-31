@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 public class BaitaController : SceneController
 {
@@ -15,6 +17,11 @@ public class BaitaController : SceneController
 
     private TaskController _taskController;
 
+    [SerializeField]
+    private PlayableDirector _pD;
+
+    [SerializeField]
+    private TimelineAsset[] _cutscenes;
     void Start()
     {
 
@@ -32,8 +39,14 @@ public class BaitaController : SceneController
             _taskController.ToggleTaskStatus("DogRescue");
             _taskController.ToggleTaskOnSuccess("DogRescue");
         }
+
+        if (!_pD)
+        {
+            _pD = FindObjectOfType<PlayableDirector>();
+        }
+        _pD.Play();
     }
-    
+
     private IEnumerator LoadNewScene(int Scene)
     {
         while (_transitionController.IsTransitioning)
@@ -61,6 +74,20 @@ public class BaitaController : SceneController
             sceneToLoad = SRScenes.CasaParenti;
         }
         StartCoroutine(LoadNewScene(sceneToLoad));
+    }
+
+    public void PlayEndCutscene()
+    {
+        if(GameValues.Scenery == 1)
+        {
+            _pD.playableAsset = _cutscenes[0];
+        }
+        else if(GameValues.Scenery == 2)
+        {
+            _pD.playableAsset = _cutscenes[1];
+        }
+
+        _pD.Play();
     }
 
 }
