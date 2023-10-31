@@ -14,9 +14,10 @@ public class TransitionController : MonoBehaviour
     private void Start()
     {
         rawImage.color = Color.black;
+        Application.targetFrameRate = 60;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!IsTransitioning) return;
         if (TransitionIn)
