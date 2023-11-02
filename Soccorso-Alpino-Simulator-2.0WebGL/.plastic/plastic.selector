@@ -1,4 +1,0 @@
-repository "Soccorso-Alpino-Simulator-2.0@AndreaBonaPoli@cloud"
-  path "/"
-    br "/main"
-    co "/main"
