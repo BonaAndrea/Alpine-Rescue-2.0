@@ -13,65 +13,165 @@ MonoBehaviour:
   m_Name: Cache
   m_EditorClassIdentifier: 
   Contents:
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/rock.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/noise_soft.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon05.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_crackedground01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain06.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain03.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/Light and Reflection/ReflectionProbe-1.exr
-    Type: UnityEngine.Cubemap, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_island01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_softpeaks01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Textures/BaitaVideo.mp4
-    Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
+  - Path: Assets/Resources/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial
+    Type: UnityEngine.PhysicsMaterial, UnityEngine.PhysicsModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
-    Type: TMPro.TMP_SpriteAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_volcano01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain08.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Textures/ezgif-7-219c24fce029.mp4
+    Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/ReadMe.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge04.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain04.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon03.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_erode02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_crackedground01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain03.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/FileNamesDescription.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_island01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_crackedground02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Fantasy Wooden GUI  Free/Scene/Demo.unity
     Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_erode02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridgeedge01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
-    Type: TMPro.TMP_StyleSheet, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/snow.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/low poly pack/scene/Demo1.unity
+    Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
+      SDF.asset
+    Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge06.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Materials/NewLayer.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/DOTweenSettings.asset
+    Type: DG.Tweening.Core.DOTweenSettings, DOTween, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain05.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Textures/Video.renderTexture
+    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/ThirdPartyNotices.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/low poly pack/Light and Reflection/ReflectionProbe-0.exr
+    Type: UnityEngine.Cubemap, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Textures/BaitaVideo.mp4
+    Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge05.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/BrushTextures/HeightmapTexture.preset
     Type: UnityEditor.Presets.Preset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_rollinghills01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/low poly pack/Light and Reflection/LightingData.asset
+    Type: UnityEditor.LightingDataAsset, UnityEditor.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/dirt.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/rock.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Textures/MenuBackground.renderTexture
+    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/moss.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/soft_round.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/scene/Demo3.unity
     Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/low poly pack/Light and Reflection/ReflectionProbe-1.exr
+    Type: UnityEngine.Cubemap, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau03.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Plugins/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    Type: TMPro.TMP_SpriteAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text
+    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset
+    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/scree.terrainlayer
+    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/sand.terrainlayer
     Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
@@ -79,176 +179,76 @@ MonoBehaviour:
   - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.text
     Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain08.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/dirt.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Textures/Video.renderTexture
-    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_erode01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain07.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_rw10_wh3_n3_RsBTW_MeshV00.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_crackedground02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/FileNamesDescription.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Textures/ezgif-7-219c24fce029.mp4
+  - Path: Assets/Resources/Textures/backgroundloop.mp4
     Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/snow.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge04.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/Light and Reflection/LightingData.asset
-    Type: UnityEditor.LightingDataAsset, UnityEditor.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Textures/MenuBackground.renderTexture
-    Type: UnityEngine.RenderTexture, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/low poly/New Flare.flare
-    Type: UnityEngine.Flare, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
   - Path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
       SDF - Fallback.asset
     Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/moss.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau03.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/Fonts & Materials/LiberationSans
-      SDF.asset
-    Type: TMPro.TMP_FontAsset, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain05.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainLayers/scree.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/KajamansRoads/Free/Meshes/l20km_cc2_sl30_t(401509)_rw28_wh15_n1_RsBTW_MeshV00.asset
     Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_volcano02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge05.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/TMP Settings.asset
-    Type: TMPro.TMP_Settings, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Following Characters.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Textures/backgroundloop.mp4
-    Type: UnityEngine.Video.VideoClip, UnityEngine.VideoModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_flatmountain01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl20_t(12123025)_A87113010_Alley.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Materials/DefaultPhysicsMaterial.physicMaterial
-    Type: UnityEngine.PhysicMaterial, UnityEngine.PhysicsModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/ReadMe.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge03.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/Light and Reflection/ReflectionProbe-0.exr
-    Type: UnityEngine.Cubemap, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_rollinghills01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/scene/Demo4.unity
-    Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.text
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon04.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon03.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/Particle/Demo.unity
     Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_flatmountain01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridgeedge01.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/low poly pack/scene/Demo1.unity
+  - Path: Assets/Resources/low poly pack/scene/Demo4.unity
     Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain04.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon04.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge03.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon02.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/low poly pack/low poly/New Flare.flare
+    Type: UnityEngine.Flare, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Plugins/TextMesh Pro/Resources/TMP Settings.asset
+    Type: TMPro.TMP_Settings, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_erode01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_softpeaks01.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon05.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/noise_soft.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain06.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Plugins/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain07.brush
+    Type: UnityEditor.Brush, UnityEditor.TerrainModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   - Path: Assets/Resources/low poly pack/scene/Demo2.unity
     Type: UnityEditor.SceneAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview
-    Type: UnityEditor.DefaultAsset, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_plateau02.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Materials/NewLayer.terrainlayer
-    Type: UnityEngine.TerrainLayer, UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/ThirdPartyNotices.txt
-    Type: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_ridge06.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/KajamansRoads/Free/Meshes/l10km_cc4_sl69_t(1212029)_rw12_wh15_n1_RsBtW_MeshV00.asset
-    Type: UnityEngine.Mesh, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/soft_round.brush
-    Type: UnityEditor.Brush, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  - Path: Assets/Resources/DOTweenSettings.asset
-    Type: DG.Tweening.Core.DOTweenSettings, DOTween, Version=1.0.0.0, Culture=neutral,
+  - Path: Assets/Plugins/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+    Type: TMPro.TMP_StyleSheet, Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null

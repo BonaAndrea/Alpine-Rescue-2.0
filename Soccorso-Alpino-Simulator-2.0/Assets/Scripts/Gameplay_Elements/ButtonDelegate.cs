@@ -15,7 +15,7 @@ public class ButtonDelegate : MonoBehaviour
     
     private void Start()
     {
-        _taskController = FindObjectOfType<TaskController>();
+        _taskController = FindAnyObjectByType<TaskController>();
         _button = GetComponent<Button>();
     }
 

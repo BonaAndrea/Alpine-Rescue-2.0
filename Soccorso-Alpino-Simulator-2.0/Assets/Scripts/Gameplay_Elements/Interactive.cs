@@ -14,7 +14,7 @@ public class Interactive : MonoBehaviour
 
     private void Start()
     {
-        _taskController = FindObjectOfType<TaskController>();
+        _taskController = FindAnyObjectByType<TaskController>();
     }
 
     public virtual void Interact()

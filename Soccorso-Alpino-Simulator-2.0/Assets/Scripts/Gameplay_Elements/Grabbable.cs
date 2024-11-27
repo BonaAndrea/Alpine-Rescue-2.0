@@ -17,7 +17,7 @@ public class Grabbable : Interactive
         _collider = GetComponentInParent<Collider>();
         _parent = _rigidbody.transform.parent;
         _playerTransform = Camera.main.transform;
-        _interactionManager = FindObjectOfType<PlayerInteractionManager>();
+        _interactionManager = FindAnyObjectByType<PlayerInteractionManager>();
     }
 
     public override void Interact()

@@ -61,7 +61,7 @@ public class FirstPersonCharacter : MonoBehaviour
         m_Jumping = false;
         m_AudioSource = GetComponent<AudioSource>();
         m_MouseLook.Init(transform, m_Camera.transform);
-        _gameController = FindObjectOfType<GameController>();
+        _gameController = FindAnyObjectByType<GameController>();
         _pointer = GetComponentInChildren<Canvas>();
     }
 

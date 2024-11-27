@@ -22,8 +22,8 @@ public class HelicopterController : SceneController
     private PlayableDirector _pD;
     void Start()
     {
-        _transitionController = FindObjectOfType<TransitionController>();
-        _pD = FindObjectOfType<PlayableDirector>(); 
+        _transitionController = FindAnyObjectByType<TransitionController>();
+        _pD = FindAnyObjectByType<PlayableDirector>(); 
     }
 
     private void FixedUpdate()

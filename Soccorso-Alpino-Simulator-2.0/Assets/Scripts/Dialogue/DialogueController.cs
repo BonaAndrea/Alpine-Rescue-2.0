@@ -19,7 +19,7 @@ public class DialogueController : MonoBehaviour
     private DialogData _dd;
     private void Start()
     {
-        _gameController = FindObjectOfType<GameController>();
+        _gameController = FindAnyObjectByType<GameController>();
     }
     
     

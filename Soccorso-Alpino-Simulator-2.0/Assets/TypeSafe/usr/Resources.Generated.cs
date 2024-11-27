@@ -6929,9 +6929,9 @@ public sealed class SRResources {
                 }
             }
             
-            public static global::TypeSafe.Resource<global::UnityEngine.PhysicMaterial> DefaultPhysicsMaterial {
+            public static global::TypeSafe.Resource<global::UnityEngine.PhysicsMaterial> DefaultPhysicsMaterial {
                 get {
-                    return ((global::TypeSafe.Resource<global::UnityEngine.PhysicMaterial>)(@__ts_internal_resources[7]));
+                    return ((global::TypeSafe.Resource<global::UnityEngine.PhysicsMaterial>)(@__ts_internal_resources[7]));
                 }
             }
             
@@ -7027,7 +7027,7 @@ public sealed class SRResources {
                     new global::TypeSafe.Resource<global::UnityEngine.Material>("CornMob", "KajamansRoads/Materials/CornMob"),
                     new global::TypeSafe.Resource<global::UnityEngine.TerrainLayer>("NewLayer", "KajamansRoads/Materials/NewLayer"),
                     new global::TypeSafe.Resource<global::UnityEngine.Material>("GrassMob", "KajamansRoads/Materials/GrassMob"),
-                    new global::TypeSafe.Resource<global::UnityEngine.PhysicMaterial>("DefaultPhysicsMaterial", "KajamansRoads/Materials/DefaultPhysicsMaterial"),
+                    new global::TypeSafe.Resource<global::UnityEngine.PhysicsMaterial>("DefaultPhysicsMaterial", "KajamansRoads/Materials/DefaultPhysicsMaterial"),
                     new global::TypeSafe.Resource<global::UnityEngine.Material>("4RoadMat", "KajamansRoads/Materials/4RoadMat"),
                     new global::TypeSafe.Resource<global::UnityEngine.Material>("TreesMob", "KajamansRoads/Materials/TreesMob"),
                     new global::TypeSafe.Resource<global::UnityEngine.Material>("TreesMat", "KajamansRoads/Materials/TreesMat"),

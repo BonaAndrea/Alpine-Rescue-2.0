@@ -32,7 +32,7 @@ public class PlayerInteractionManager : MonoBehaviour
 
     private void Start()
     {
-        _gameController = FindObjectOfType<GameController>();
+        _gameController = FindAnyObjectByType<GameController>();
     }
 
     void Update()

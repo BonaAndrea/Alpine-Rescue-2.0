@@ -11,14 +11,13 @@ public class ColliderCheck : MonoBehaviour
 
     private void Start()
     {
-        _controller = FindObjectOfType<TaskController>();
+        _controller = FindAnyObjectByType<TaskController>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
             Transform[] children = other.GetComponentsInChildren<Transform>();
 
-            Transform foundTransform = null;
             foreach (Transform child in children)
             {
                 if (child.CompareTag(Tag))

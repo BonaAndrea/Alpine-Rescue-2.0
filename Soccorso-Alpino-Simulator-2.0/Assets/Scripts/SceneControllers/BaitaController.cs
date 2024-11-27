@@ -42,7 +42,7 @@ public class BaitaController : SceneController
 
         if (!_pD)
         {
-            _pD = FindObjectOfType<PlayableDirector>();
+            _pD = FindAnyObjectByType<PlayableDirector>();
         }
         _pD.Play();
     }

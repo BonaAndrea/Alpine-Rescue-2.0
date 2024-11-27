@@ -35,12 +35,12 @@ public class GameController : MonoBehaviour
     private PlayableDirector[] _directors;
     private void Awake()
     {
-        _directors = FindObjectsOfType<PlayableDirector>();
+        _directors = UnityEngine.Object.FindObjectsByType<PlayableDirector>(FindObjectsSortMode.None);
     }
     
     void Start()
     {
-        FirstPersonCharacter = FindObjectOfType<FirstPersonCharacter>();
+        FirstPersonCharacter = FindAnyObjectByType<FirstPersonCharacter>();
         DialogueController = GetComponent<DialogueController>();
     }
 

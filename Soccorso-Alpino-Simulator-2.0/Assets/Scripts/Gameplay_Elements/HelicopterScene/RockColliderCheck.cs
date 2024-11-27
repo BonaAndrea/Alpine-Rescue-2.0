@@ -19,7 +19,7 @@ public class RockColliderCheck : ColliderUtilities
     }
     private void Start()
     {
-        _controller = FindObjectOfType<TaskController>();
+        _controller = FindAnyObjectByType<TaskController>();
     }
 
     public void FixedUpdate()

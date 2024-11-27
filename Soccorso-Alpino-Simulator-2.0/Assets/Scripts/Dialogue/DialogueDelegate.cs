@@ -23,7 +23,7 @@ public class DialogueDelegate : MonoBehaviour
             _currentDialogueIndex = 0;
         }
 
-        _dialogueController = FindObjectOfType<DialogueController>();
+        _dialogueController = FindAnyObjectByType<DialogueController>();
     }
 
     public void SetDialogue()
