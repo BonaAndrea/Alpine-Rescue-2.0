@@ -68,6 +68,7 @@ public class GameController : MonoBehaviour
     {
         GameState = GameState.Play;
         Cursor.visible = false;
+        _directors[0].Stop();
     }
     
     public void SetGameStateDialogue()
