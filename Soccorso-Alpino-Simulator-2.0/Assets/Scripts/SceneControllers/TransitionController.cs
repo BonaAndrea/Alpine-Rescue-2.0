@@ -21,7 +21,7 @@ public class TransitionController : MonoBehaviour
         if (!IsTransitioning) return;
         if (TransitionIn)
         {
-            if(rawImage.rectTransform.localPosition.x != DestinationX)
+            if(rawImage.rectTransform.localPosition.x <= DestinationX)
             {
                 rawImage.rectTransform.localPosition += Vector3.right * TransitionSpeed;
             }
@@ -32,7 +32,7 @@ public class TransitionController : MonoBehaviour
         }
         if (!TransitionIn)
         {
-            if (rawImage.rectTransform.localPosition.x != 0)
+            if (rawImage.rectTransform.localPosition.x >= 0)
             {
                 rawImage.rectTransform.localPosition += Vector3.left * TransitionSpeed;
             }

@@ -16,6 +16,7 @@ public enum GameState
 };
 public class GameController : MonoBehaviour
 {
+    [SerializeField]
     private GameState gameState;
 
     public GameState GameState

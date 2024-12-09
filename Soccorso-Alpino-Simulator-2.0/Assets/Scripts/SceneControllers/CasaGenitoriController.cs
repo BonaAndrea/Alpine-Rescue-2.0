@@ -48,14 +48,7 @@ public class CasaGenitoriController : SceneController
     public void LoadNextScene()
     {
         int sceneToLoad = 0;
-        if(GameValues.Scenery == 1)
-        {
-            sceneToLoad = SRScenes.Montagna_Elicottero;
-        }
-        else if (GameValues.Scenery == 2)
-        {
-            sceneToLoad = SRScenes.CasaParenti;
-        }
+            sceneToLoad = SRScenes.BoscoCane;
         StartCoroutine(LoadNewScene(sceneToLoad));
     }
 
